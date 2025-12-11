@@ -71,37 +71,37 @@ model-view
 - Passenger cancellations are consistently higher than driver cancellations across all months.
 - Driver cancellations spike on months with low ride volume (April), suggesting:
 
- - Low incentive periods,
+  - Low incentive periods,
 
- - Operational disruptions,
+  - Operational disruptions,
 
- - Misalignment between demand and supply.
+  - Misalignment between demand and supply.
 
 ### 4. Service Type Performance (TAXI vs PHV)
 
 - TAXI drivers generate the majority of bookings and rides, significantly outperforming PHV in both volume and stability.
 - PHV shows more volatility, indicating:
 
- - Market changes,
- - Driver churn,
- - Less predictable demand cycles.
+  - Market changes,
+  - Driver churn,
+  - Less predictable demand cycles.
 
 ### 5. Geographic Trends
 
 - DE region dominates ride and booking volume, while ES shows smaller but consistent growth.
 - Cancellation behaviour differs by country:
 
- - Germany (DE) has higher passenger cancellations.
- - Spain (ES) shows balanced cancellation patterns.
+  - Germany (DE) has higher passenger cancellations.
+  - Spain (ES) shows balanced cancellation patterns.
 
 ### 6. Marketing Insights
 
 - Drivers who receive marketing communications (push/SMS/email) show:
 
- - Higher booking volume,
- - Higher retention,
- - Slightly higher completion %
- - suggesting marketing touchpoints positively influence engagement.
+  - Higher booking volume,
+  - Higher retention,
+  - Slightly higher completion %
+  - suggesting marketing touchpoints positively influence engagement.
 
 ### 7. Outlier Detection (IQR + Z-score)
 
@@ -109,9 +109,9 @@ model-view
 - High-volume outliers usually correspond to long-tenure, highly active, multi-service drivers.
 - Low outliers often align with:
 
- - New drivers,
- - Inactive periods,
- - Incorrect registration/activation dates (data quality issue).
+  - New drivers,
+  - Inactive periods,
+  - Incorrect registration/activation dates (data quality issue).
 
 ### 8. Time-Based Behaviour
 
@@ -123,14 +123,13 @@ model-view
 
 - Using the custom DAX driver experience calculation, most high-performing drivers:
 
- - Have longer tenure,
- - Are overwhelmingly TAXI drivers,
- - shows a direct positive relationship between experience and ride volume.
+  - Have longer tenure,
+  - Are overwhelmingly TAXI drivers,
+  - shows a direct positive relationship between experience and ride volume.
 
 ### 10. Top Driver Analysis
 
 - Top 10 drivers contribute highly disproportionate ride and booking volume, confirming a power-law distribution.
-
 - Drivers with both TAXI + PHV services perform significantly better overall.
 
 ## DAX Measures
