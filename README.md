@@ -34,12 +34,9 @@ Help operations and product teams monitor driver engagement and operational heal
 
 The Power BI model uses **1-to-many relationships** with `show_id` as the key:
 ```
-titles (main table)
-│── listed_in (genres)
-│── director table
-│── cast table
-│── description
-└── country table
+model-view
+│── ride-it drivers (main table)
+│── ride-it drivers activity
 ```
 
 > This star-schema–like structure supports **clean filtering** across all dashboard visuals.
@@ -109,13 +106,28 @@ IF(
 ```
 ## Key dashboards / screenshots
 
+## Dashboard
 ![Dashboard](screenshots/dashboard.png)
+
+
 ![Analytics dashboard](screenshots/analytics-dashboard.png)
+
+
 ![Offers vs Bookings trend](screenshots/offers-vs-bookings.png)
+
+
 ![Drivers MoM change](screenshots/drivers-mom-change.png)
+
+
 ![Performance dashboard](screenshots/performance-dashboard.png)
+
+
 ![Tabular / Top offers table](screenshots/tabular-dashboard.png)
+
+
 ![Top 10 drivers](screenshots/top-10-drivers.png)
+
+---
 
 ## 📁 Project Structure
 ```
