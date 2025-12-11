@@ -50,6 +50,90 @@ model-view
 > **Note:** The original CSVs (`rideit_drivers.csv`, `rideit_drivers_activity.csv`) are confidential and therefore not stored in this public repo. Instead, screenshots and metric definitions are provided.
 
 ---
+## 🔍 Key Insights & Findings
+### 1. Driver Activity & Engagement
+
+- Active drivers drop significantly in April, followed by a strong recovery in May (≈ +47% MoM) — indicating seasonal, operational, or incentive-related effects.
+- Only a small percentage of drivers maintain consistent monthly activity, suggesting the platform may need engagement campaigns or improved retention measures.
+- Drivers with higher Gold-level ranks contribute disproportionately to total rides, showing correlation between loyalty tiers and higher productivity.
+
+### 2. Offers → Bookings → Rides Funnel
+
+- Conversion efficiency:
+
+ - Offers → Bookings: ≈ 30%
+
+ - Bookings → Rides (Completion %): ≈ 82%
+
+- The largest loss in the funnel occurs between offers and bookings, meaning drivers may be receiving many low-quality, irrelevant, or poorly timed offers.
+- Completion rate remains healthy across months but varies slightly with driver activity fluctuations.
+
+### 3. Cancellations — Drivers vs Passengers
+
+- Passenger cancellations are consistently higher than driver cancellations across all months.
+- Driver cancellations spike on months with low ride volume (April), suggesting:
+
+ - Low incentive periods,
+
+ - Operational disruptions,
+
+ - Misalignment between demand and supply.
+
+### 4. Service Type Performance (TAXI vs PHV)
+
+- TAXI drivers generate the majority of bookings and rides, significantly outperforming PHV in both volume and stability.
+- PHV shows more volatility, indicating:
+
+ - Market changes,
+ - Driver churn,
+ - Less predictable demand cycles.
+
+### 5. Geographic Trends
+
+- DE region dominates ride and booking volume, while ES shows smaller but consistent growth.
+- Cancellation behaviour differs by country:
+
+ - Germany (DE) has higher passenger cancellations.
+ - Spain (ES) shows balanced cancellation patterns.
+
+### 6. Marketing Insights
+
+- Drivers who receive marketing communications (push/SMS/email) show:
+
+ - Higher booking volume,
+ - Higher retention,
+ - Slightly higher completion %
+ - suggesting marketing touchpoints positively influence engagement.
+
+7. Outlier Detection (IQR + Z-score)
+
+- Ride and offer outliers were successfully flagged:
+- High-volume outliers usually correspond to long-tenure, highly active, multi-service drivers.
+- Low outliers often align with:
+
+ - New drivers,
+ - Inactive periods,
+ - Incorrect registration/activation dates (data quality issue).
+
+### 8. Time-Based Behaviour
+
+- Friday and Saturday have the highest ride volume (939K and 914K respectively).
+- Monday is the lowest performing day, consistent with expected commuter and leisure patterns.
+- Average bookings, offers, and rides trend upward from January → March, drop sharply in April, and recover in May & June.
+
+### 9. Driver Experience
+
+- Using the custom DAX driver experience calculation, most high-performing drivers:
+
+ - Have longer tenure,
+ - Are overwhelmingly TAXI drivers,
+ - shows a direct positive relationship between experience and ride volume.
+
+### 10. Top Driver Analysis
+
+- Top 10 drivers contribute highly disproportionate ride and booking volume, confirming a power-law distribution.
+
+- Drivers with both TAXI + PHV services perform significantly better overall.
 
 ## DAX Measures
 
@@ -142,3 +226,4 @@ Ride-it-analysis/
 ├─ screenshots/                                  
 ├─ README.md                   
 ```
+
