@@ -103,34 +103,19 @@ model-view
   - Slightly higher completion %
 - Suggesting marketing touchpoints positively influence engagement.
 
-### 7. Outlier Detection (IQR + Z-score)
-
-- Ride and offer outliers were successfully flagged:
-- High-volume outliers usually correspond to long-tenure, highly active, multi-service drivers.
-- Low outliers often align with:
-
-  - New drivers,
-  - Inactive periods,
-  - Incorrect registration/activation dates (data quality issue).
-
-### 8. Time-Based Behaviour
+### 7. Time-Based Behaviour
 
 - Friday and Saturday have the highest ride volume (939K and 914K respectively).
 - Monday is the lowest performing day, consistent with expected commuter and leisure patterns.
 - Average bookings, offers, and rides trend upward from January → March, drop sharply in April, and recover in May & June.
 
-### 9. Driver Experience
+### 8. Driver Experience
 
 - Using the custom DAX driver experience calculation, most high-performing drivers:
 
   - Have longer tenure,
   - Are overwhelmingly TAXI drivers,
   - shows a direct positive relationship between experience and ride volume.
-
-### 10. Top Driver Analysis
-
-- Top 10 drivers contribute highly disproportionate ride and booking volume, confirming a power-law distribution.
-- Drivers with both TAXI + PHV services perform significantly better overall.
 
 ## DAX Measures
 
