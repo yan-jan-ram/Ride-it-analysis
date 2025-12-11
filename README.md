@@ -101,7 +101,7 @@ model-view
   - Higher booking volume,
   - Higher retention,
   - Slightly higher completion %
-  - suggesting marketing touchpoints positively influence engagement.
+- Suggesting marketing touchpoints positively influence engagement.
 
 ### 7. Outlier Detection (IQR + Z-score)
 
@@ -155,7 +155,7 @@ DIVIDE([Total rides], [Total bookings])
 Cancellation Rate =
 1 - ([Total rides] / [Total bookings])
 ```
-#### MoM% pattern (example for bookings)
+#### Bookings MoM% pattern
 ```
 bookings MoM% =
 IF(
@@ -169,7 +169,7 @@ IF(
     RETURN DIVIDE(SUM('rideit_drivers_activity'[bookings]) - __PREV_MONTH, __PREV_MONTH)
 )
 ```
-#### IQR outlier flag for offers (global context)
+#### IQR outlier flag for offers
 ```
 IQR Outlier Flag(offers) =
 VAR CurrentValue = SELECTEDVALUE(rideit_drivers_activity[offers])
@@ -185,6 +185,28 @@ IF(
     IF(CurrentValue < LowerBound || CurrentValue > UpperBound, "Outlier", "Normal")
 )
 ```
+
+#### Total rides MoM
+```
+Total rides MoM% =
+IF (
+    ISFILTERED ( 'rideit_drivers_activity'[active_date] ),
+    ERROR (
+        "Time intelligence quick measures can only be grouped or filtered by the Power BI-provided date hierarchy or primary date column."
+    ),
+    VAR __PREV_MONTH =
+        CALCULATE (
+            [Total rides],
+            DATEADD ( calenderTable[Date], -1, MONTH )
+        )
+    RETURN
+        DIVIDE (
+            [Total rides] - __PREV_MONTH,
+            __PREV_MONTH
+        )
+)
+```
+
 ## Key dashboards / screenshots
 
 ## 1. Dashboard
