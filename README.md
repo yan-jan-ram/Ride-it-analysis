@@ -109,22 +109,28 @@ IF(
 ## Dashboard
 ![Dashboard](screenshots/dashboard.png)
 
-
+## Analytics dashboard-1
 ![Analytics dashboard](screenshots/analytics-dashboard.png)
 
-
-![Offers vs Bookings trend](screenshots/offers-vs-bookings.png)
-
-
-![Drivers MoM change](screenshots/drivers-mom-change.png)
-
-
-![Performance dashboard](screenshots/performance-dashboard.png)
-
-
+## Analytics dashboard-2
 ![Tabular / Top offers table](screenshots/tabular-dashboard.png)
 
+## Performance dashboard
+![Performance dashboard](screenshots/performance-dashboard.png)
 
+## Offers vs Bookings
+![Offers vs Bookings trend](screenshots/offers-vs-bookings.png)
+
+## Drivers Month-Over-Month
+![Drivers MoM change](screenshots/drivers-MoM-change.png)
+
+## Rides Funnel Chart
+![Rides_Funnel_Chart](screenshots/rides-funnel-chart.png)
+
+## Average rides by month
+![Average Rides by Month](screenshots/avg-rides-by-month.png)
+
+## Top 10 drivers
 ![Top 10 drivers](screenshots/top-10-drivers.png)
 
 ---
