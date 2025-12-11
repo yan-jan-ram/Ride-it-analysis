@@ -106,31 +106,31 @@ IF(
 ```
 ## Key dashboards / screenshots
 
-## Dashboard
+## 1. Dashboard
 ![Dashboard](screenshots/dashboard.png)
 
-## Analytics dashboard-1
+## 2. Analytics dashboard-1
 ![Analytics dashboard](screenshots/analytics-dashboard.png)
 
-## Analytics dashboard-2
+## 3. Analytics dashboard-2
 ![Tabular / Top offers table](screenshots/tabular-dashboard.png)
 
-## Performance dashboard
+## 4. Performance dashboard
 ![Performance dashboard](screenshots/performance-dashboard.png)
 
-## Offers vs Bookings
+## 5. Offers vs Bookings
 ![Offers vs Bookings trend](screenshots/offers-vs-bookings.png)
 
-## Drivers Month-Over-Month
+## 6. Drivers Month-Over-Month
 ![Drivers MoM change](screenshots/drivers-MoM-change.png)
 
-## Rides Funnel Chart
+## 7. Rides Funnel Chart
 ![Rides_Funnel_Chart](screenshots/rides-funnel-chart.png)
 
-## Average rides by month
+## 8. Average rides by month
 ![Average Rides by Month](screenshots/avg-rides-by-month.png)
 
-## Top 10 drivers
+## 9. Top 10 drivers
 ![Top 10 drivers](screenshots/top-10-drivers.png)
 
 ---
