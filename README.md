@@ -20,17 +20,34 @@ Help operations and product teams monitor driver engagement and operational heal
 
 ---
 
-## Tech stack
-- Power BI Desktop (data model, DAX, visuals)
-- Microsoft Excel (initial ETL/merge)
-- DAX for measures & time-intelligence
-- GitHub — documentation & screenshots
+## 🛠 Tech Stack
+| Component | Usage |
+|------|---------|
+| Power BI Desktop | data model, DAX, visuals |
+| Microsoft Excel | initial ETL/merge |
+| DAX | measures & time-intelligence |
+| GitHub | documentation & screenshots |
 
 ---
 
+## 🗂️ Data Model
+
+The Power BI model uses **1-to-many relationships** with `show_id` as the key:
+```
+titles (main table)
+│── listed_in (genres)
+│── director table
+│── cast table
+│── description
+└── country table
+```
+
+> This star-schema–like structure supports **clean filtering** across all dashboard visuals.
+
+![Model View](screenshots/model-view.png)
+
 ## What’s included in this repo
-- `screenshots/` — dashboard & model images (visual proof; upload these)
-- `docs/` (optional) — metric definitions & notes
+- `screenshots/` — dashboard & model images
 - `README.md` (this file)
 
 > **Note:** The original CSVs (`rideit_drivers.csv`, `rideit_drivers_activity.csv`) are confidential and therefore not stored in this public repo. Instead, screenshots and metric definitions are provided.
@@ -91,13 +108,19 @@ IF(
 )
 ```
 ## Key dashboards / screenshots
-Place the following screenshots inside `screenshots/` (recommended filenames shown). Then these images will render automatically.
 
+![Dashboard](screenshots/dashboard.png)
 ![Analytics dashboard](screenshots/analytics-dashboard.png)
-![Overview KPIs](screenshots/rideit-kpis.png)
 ![Offers vs Bookings trend](screenshots/offers-vs-bookings.png)
 ![Drivers MoM change](screenshots/drivers-mom-change.png)
-![Model view and measures](screenshots/model-view.png)
 ![Performance dashboard](screenshots/performance-dashboard.png)
 ![Tabular / Top offers table](screenshots/tabular-dashboard.png)
 ![Top 10 drivers](screenshots/top-10-drivers.png)
+
+## 📁 Project Structure
+```
+Ride-it-analysis/
+├─ Ride-it PBIX
+├─ screenshots/                                  
+├─ README.md                   
+```
