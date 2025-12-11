@@ -60,10 +60,8 @@ model-view
 ### 2. Offers → Bookings → Rides Funnel
 
 - Conversion efficiency:
-
- - Offers → Bookings: ≈ 30%
-
- - Bookings → Rides (Completion %): ≈ 82%
+  - Offers → Bookings: ≈ 30%
+  - Bookings → Rides (Completion %): ≈ 82%
 
 - The largest loss in the funnel occurs between offers and bookings, meaning drivers may be receiving many low-quality, irrelevant, or poorly timed offers.
 - Completion rate remains healthy across months but varies slightly with driver activity fluctuations.
@@ -105,7 +103,7 @@ model-view
  - Slightly higher completion %
  - suggesting marketing touchpoints positively influence engagement.
 
-7. Outlier Detection (IQR + Z-score)
+### 7. Outlier Detection (IQR + Z-score)
 
 - Ride and offer outliers were successfully flagged:
 - High-volume outliers usually correspond to long-tenure, highly active, multi-service drivers.
